@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Explorer Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="Globe logo">
+    <h1>🌍 World Explorer Quiz</h1>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search country...">
+  </div>
+
+  <div class="quiz-container" id="countryList">
+    <div class="country-card">🇮🇳 India</div>
+    <div class="country-card">🇨🇳 China</div>
+    <div class="country-card">🇫🇷 France</div>
+    <div class="country-card">🇧🇷 Brazil</div>
+    <div class="country-card">🇯🇵 Japan</div>
+    <div class="country-card">🇦🇺 Australia</div>
+  </div>
+
+  <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+  <div class="score-display" id="scoreDisplay"></div>
+
+  <div class="question-section" id="quizBox">
+    <h2 id="question">Question will appear here</h2>
+    <div class="answers">
+      <button onclick="checkAnswer(this)">Option 1</button>
+      <button onclick="checkAnswer(this)">Option 2</button>
+      <button onclick="checkAnswer(this)">Option 3</button>
+      <button onclick="checkAnswer(this)">Option 4</button>
+    </div>
+    <div class="feedback" id="feedback"></div>
+  </div>
+
+  <button class="reset-btn" onclick="resetQuiz()">🔄 Reset Quiz</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
